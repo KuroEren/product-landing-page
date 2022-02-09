@@ -1,0 +1,22 @@
+#header {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: cyan;
+    align-items: center;
+
+    #header-img {
+        height: 8vw;
+        margin: 0 5px;
+    }
+
+    ul {
+        line-height: 40px;
+        li {
+            display: inline-block;  
+        }
+    }
+}

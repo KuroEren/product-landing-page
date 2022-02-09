@@ -1,0 +1,28 @@
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: cyan;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header #header-img {
+  height: 8vw;
+  margin: 0 5px;
+}
+
+#header ul {
+  line-height: 40px;
+}
+
+#header ul li {
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */
