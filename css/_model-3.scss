@@ -1,4 +1,4 @@
-.model-3 {
+#model-3 {
     width: 100vw;
     height: 770px;
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/c82315a6-ac99-464a-a753-c26bc0fb647d/bvlatuR/std/1200x628/lhd-model-3-social);
@@ -23,7 +23,23 @@
         bottom: -50px;
         
         div {
-            margin: 0 20px;
+            margin: 0 50px;
+        }
+
+        .button-3 {
+
+            button {
+                background-color: transparent;
+                font-size: 15px;
+                padding: 10px 50px;
+                border: 1px solid black;
+                border-radius: 30px;
+            }
+
+            button:hover {
+                background-color: black;
+                color: white;
+            }
         }
     }
 }
