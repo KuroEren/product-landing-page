@@ -1,28 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Libre+Franklin:wght@300&display=swap");
 #header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 40px;
   width: 100%;
   position: fixed;
   top: 0px;
   left: 0px;
-  background-color: cyan;
+  background-color: transparent;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10000000;
 }
 
 #header #header-img {
-  height: 8vw;
-  margin: 0 5px;
+  height: 40px;
+  margin: 0 5px 0 100px;
 }
 
 #header ul {
-  line-height: 40px;
+  list-style: none;
 }
 
 #header ul li {
   display: inline-block;
+  padding: 0 10px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+#header ul li a:hover {
+  background-color: #0000000d;
+}
+
+#header nav#nav-bar ~ ul {
+  margin: 0 10px 0 0;
+}
+
+#header nav#nav-bar ~ ul li {
+  margin: 0 -10px;
+}
+
+.model-s {
+  width: 100vw;
+  height: 770px;
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/56cb8c41-e898-44ce-b6b7-fe9b9a05f529/bvlatuR/std/1200x628/MS-Social);
+  background-size: cover;
+  background-position: center top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.model-s .title-s {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.model-s .info-s {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: -50px;
+}
+
+.model-s .info-s div {
+  margin: 0 20px;
+}
+
+.model-3 {
+  width: 100vw;
+  height: 770px;
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/c82315a6-ac99-464a-a753-c26bc0fb647d/bvlatuR/std/1200x628/lhd-model-3-social);
+  background-size: cover;
+  background-position: center top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.model-3 .title-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.model-3 .info-3 {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: -50px;
+}
+
+.model-3 .info-3 div {
+  margin: 0 20px;
+}
+
+.model-x {
+  width: 100vw;
+  height: 770px;
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/da705069-91b5-41cb-86f3-86a585c6fdf3/bvlatuR/std/2880x1800/MX-Hero-Desktop);
+  background-size: cover;
+  background-position: center top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.model-x .title-x {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.model-x .info-x {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: -50px;
+}
+
+.model-x .info-x div {
+  margin: 0 20px;
+}
+
+.model-y {
+  width: 100vw;
+  height: 770px;
+  background-image: url(https://cdn.mos.cms.futurecdn.net/mEseonq4fwUzSkR86crR6h.jpg);
+  background-size: cover;
+  background-position: center top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.model-y .title-y {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.model-y .info-y {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: -50px;
+}
+
+.model-y .info-y div {
+  margin: 0 20px;
+}
+
+* {
+  font-family: 'Libre Franklin';
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */

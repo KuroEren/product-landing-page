@@ -1,0 +1,29 @@
+.model-3 {
+    width: 100vw;
+    height: 770px;
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/c82315a6-ac99-464a-a753-c26bc0fb647d/bvlatuR/std/1200x628/lhd-model-3-social);
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .title-3 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 100px 0;
+    }
+
+    .info-3 {
+        width: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: -50px;
+        
+        div {
+            margin: 0 20px;
+        }
+    }
+}
