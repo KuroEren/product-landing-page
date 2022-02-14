@@ -212,6 +212,7 @@ section.form-container .form-cont #form {
 
 section.form-container .form-cont #form input {
   display: block;
+  width: 40vw;
   margin: 10px 0;
   padding: 5px;
   border: 1px solid black;
@@ -219,7 +220,6 @@ section.form-container .form-cont #form input {
 }
 
 section.form-container .form-cont #form input#submit {
-  width: 100%;
   cursor: pointer;
 }
 
