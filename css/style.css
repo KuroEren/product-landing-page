@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: transparent;
+  text-align: left;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+#header #header-img {
+  width: 100px;
+  margin-left: 10px;
+}
+
+#header #nav-bar {
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  text-align: right;
+  top: 100%;
+  right: 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+#header #nav-bar > ul {
+  list-style: none;
+}
+
+#header #nav-bar > ul > li {
+  margin: 0 2rem 1rem 0;
+}
+
+#header #nav-bar > ul > li > a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: opacity 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+
+#header #nav-bar > ul > li > a:hover {
+  background-color: #0000001c;
+}
+
+#header .nav-toggle {
+  display: none;
+}
+
+#header .nav-toggle:checked ~ nav#nav-bar {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+#header .nav-toggle:checked ~ nav#nav-bar > ul > li > a {
+  opacity: 1;
+  -webkit-transition: opacity 250ms ease-in-out 250ms;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+#header .nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 2rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+}
+
+html {
+  overflow: hidden;
+}
+
+section#fullpage {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: auto;
+}
+
+section.model-s {
+  background-image: url(../images/1.avif);
+}
+
+section.model-3 {
+  background-image: url(../images/3.avif);
+}
+
+section.model-x {
+  background-image: url(../images/4.avif);
+}
+
+section.model-y {
+  background-image: url(../images/2.avif);
+}
+
+.section-content {
+  position: relative;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.redirect-container {
+  position: relative;
+  bottom: -75%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.redirect-btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 2rem;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgba(23, 26, 42, 0.8);
+  color: white;
+}
+
+section.form-container {
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.form-container .p-cont {
+  text-align: center;
+  width: 100%;
+}
+
+section.form-container .p-cont p {
+  margin-top: -20px;
+  font-size: large;
+  font-weight: 600;
+}
+
+section.form-container .form-cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+}
+
+section.form-container .form-cont #form {
+  margin-top: -150px;
+}
+
+section.form-container .form-cont #form input {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+section.form-container .form-cont #form input#submit {
+  width: 100%;
+  cursor: pointer;
+}
+
+section.form-container .form-cont #form input#submit:hover {
+  background-color: black;
+  color: white;
+}
+
+section.ads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+
+section.ads > .video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+section.ads > .video > #video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section.ads > .btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+section.ads > .btn > .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  #header #header-img {
+    width: 100px;
+    margin-left: 10px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  #header #nav-bar {
+    position: relative;
+    text-align: left;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    top: initial;
+    left: initial;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header #nav-bar > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #header #nav-bar > ul > li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  #header #nav-bar > ul > li > a {
+    opacity: 1;
+    position: relative;
+  }
+  #header .nav-toggle-label {
+    display: none;
+  }
+  .redirect-btn {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  section.ads {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+  }
+  section.ads > .video {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: relative;
+    top: 25%;
+    left: 20%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  section.ads > .video > #video {
+    width: 100%;
+    height: 50%;
+  }
+  section.ads > .btn {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.ads > .btn > .slogan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+* {
+  font-family: 'Barlow Condensed';
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=style.css.map */

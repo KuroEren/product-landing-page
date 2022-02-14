@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<!--HEADER-->
+    <header id="header">
+        <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG21.png" alt="logo" id="header-img">
+    
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="burger">&#9776;</span>
+        </label>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#model-s">Model S</a></li>
+                <li><a class="nav-link" href="#model-3">Model 3</a></li>
+                <li><a class="nav-link" href="#model-x">Model X</a></li>
+                <li><a class="nav-link" href="#model-y">Model Y</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="fullpage">
+<!--MODEL S-->
+    <section id="model-s" class="model-s scroll-area">
+        <div class="section-content">
+            <h1 class="model-s-title">Model S</h1>
+        </div>
+
+        <div class="redirect-container">
+            <a href="#ads" class="redirect-btn">own one now</a>
+        </div>
+    </section>
+
+<!--MODEL 3-->
+    <section id="model-3" class="model-3 scroll-area">
+        <div class="section-content">
+            <h1 class="model-3-title">Model 3</h1>
+        </div>
+
+        <div class="redirect-container">
+            <a href="#ads" class="redirect-btn">own one now</a>
+        </div>
+    </section>
+
+<!--MODEL X-->
+    <section id="model-x" class="model-x scroll-area">
+        <div class="section-content">
+            <h1 class="model-x-title">Model X</h1>
+        </div>
+        
+        <div class="redirect-container">
+            <a href="#ads" class="redirect-btn">own one now</a>
+        </div>
+    </section>
+
+<!--MODEL Y-->
+    <section id="model-y" class="model-y scroll-area">
+        <div class="section-content">
+            <h1 class="model-y-title">Model Y</h1>
+        </div>
+        
+        <div class="redirect-container">
+            <a href="#ads" class="redirect-btn">own one now</a>
+        </div>
+    </section>
+
+<!--PROMO-VID-->
+    <section id="ads" class="ads scroll-area">
+        <div class="video">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/XB2g7-HgE_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="btn">
+            <div class="slogan">
+                <h1>Revolutionize Your Commute</h1>
+            </div>
+        </div>
+    </section>
+
+<!--FORM-->
+    <section id="adss" class="form-container">
+        <div class="p-cont">
+            <p>Enter your name and email address to own one</p>
+        </div>
+
+        <div class="form-cont">
+            <form action="thanku.html" id="form">
+                <label for="name">Name </label>
+                <input type="text" name="name" id="name" placeholder="Jack Daniel" required>
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" placeholder="jack@gmail.com" required>
+                <label for="submit"></label>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </section>
+</section>
+
+</body>
+</html>
